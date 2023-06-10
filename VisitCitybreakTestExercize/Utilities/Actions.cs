@@ -35,15 +35,7 @@ namespace VisitCitybreakTestExercize
             IWebElement mobileNoField = driver.FindElement(By.Id("travellerPhoneNumber"));
             mobileNoField.Clear();
             mobileNoField.SendKeys(mobileNo);
-        }
-
-        public static bool IsConfirmationMessageDisplayed(IWebDriver driver)
-        {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-            By confirmationMessageLocator = By.XPath("/html//div[@id='Citybreak_container']/div[@class='Citybreak_inner cb-framework']/div[@class='cb-framework cb-fw-checkout']//h1[.='Thank you! Your reservation is confirmed.']");
-            IWebElement confirmationMessageElement = wait.Until(ExpectedConditions.ElementIsVisible(confirmationMessageLocator));
-            return confirmationMessageElement.Displayed;
-        }
+        }        
 
     }
 }

@@ -96,12 +96,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\ConfirmationPage.cs" />
     <Compile Include="Pages\PaymentPage.cs" />
-    <Compile Include="TestPage.cs" />
-    <Compile Include="Tests\ItemToBasketClickButton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Pages\TestPage.cs" />
+    <Compile Include="Tests\ConfirmedReservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Actions.cs" />
     <Compile Include="Utilities\DriverManager.cs" />
+    <Compile Include="Utilities\ItemHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
